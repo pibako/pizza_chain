@@ -1,11 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 pepperoni:
+  restaurant: place
   name: Pepperoni
   price: 5.99
   description: sasuages, onion, blabla
 
 margherita:
+  restaurant: place
   name: Margherita
   price: 4.99
   description: basil, tomatoes, mozarella
