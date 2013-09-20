@@ -1,10 +1,37 @@
-#+TITLE: Pizza chain README
+#+TITLE: Pizza Chain README
 #+OPTIONS:   toc:nil
 
 * Prerequisites
   To run this app you must have:
   - ruby version 1.9.3-p448 installed (I personally prefer to use
-    rbenv but rvm is fine).
-  - sqlite3 (usually available on any platform)
+    rbenv but rvm is also fine).
+  - sqlite3 (usually available by default on any platform)
 * Installation
   Get the app from my github account:
+  : $ git clone https://github.com/pibako/pizza_chain.git
+  : $ cd pizza_chain
+  and execute ~boundle install~ command:
+  : $ bundle install
+* Bootstrap
+  First setup database
+  : $ bundle exec rake db:setup
+  Then test it:
+  : $ bundle exec rake
+  I usually use guard for continuous testing:
+  : $ bundle exec guard -i
+  All tests should be green now.
+* Usage
+  Start server locally:
+  : $ rails s
+  and go to http://localhost:3000
+** Public area:
+   You should see list of pizzerias with links to see more details
+   about each. At the top of the page you can find link to admin area.
+** Admin area:
+   Admin pages are delivered using ActiveAdmin (to write my own
+   administration framework I consider a waste of time). Go to
+   http://localhost:3000/admin and login with the following
+   credentials:
+   - email: ~pizza@chain.com~
+   - password: ~pizzachain~
+   You can easily manage restaurants and pizzas.
