@@ -33,3 +33,4 @@ Schedule.create([
 ], :without_protection => true )
 
 
+AdminUser.create!(:email => 'pizza@chain.com', :password => 'pizzachain', :password_confirmation => 'pizzachain')
