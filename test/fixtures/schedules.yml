@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  restaurant_id:
+  open_monday: '09:00'
+  close_monday: '21:00'
+  open_tuesday: '09:00'
+  close_tuesday: '21:00'
+  open_wednesday: '09:00'
+  close_wednesday: '21:00'
+  open_thursday: '09:00'
+  close_thursday: '21:00'
+  open_friday: '09:00'
+  close_friday: '21:00'
+  open_saturday: '09:00'
+  close_saturday: '21:00'
+  open_sunday: '09:00'
+  close_sunday: '21:00'
+
+two:
+  restaurant_id:
+  open_monday: '09:00'
+  close_monday: '21:00'
+  open_tuesday: '09:00'
+  close_tuesday: '21:00'
+  open_wednesday: '09:00'
+  close_wednesday: '21:00'
+  open_thursday: '09:00'
+  close_thursday: '21:00'
+  open_friday: '09:00'
+  close_friday: '21:00'
+  open_saturday: '09:00'
+  close_saturday: '21:00'
+  open_sunday: '09:00'
+  close_sunday: '21:00'

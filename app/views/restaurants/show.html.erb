@@ -1,0 +1,26 @@
+<h1>Restaurant <%= @restaurant.name %></h1>
+<div>
+  <h3>Openning hours:</h3>
+  <p>Weekday: <%= @schedule.open_weekday %> : <%= @schedule.close_weekday %></p>
+  <p>Weekend: <%= @schedule.open_weekend %> : <%= @schedule.close_weekend %></p>
+</div>
+<div>
+  <h3>Offer:</h3>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Description</th>
+    </tr>
+    <% @pizzas.each do |pizza| -%>
+      <tr>
+        <td><%= pizza.name %></td>
+        <td><%= pizza.price %></td>
+        <td><%= pizza.description %></td>
+      </tr>
+    <% end -%>
+  </table>
+</div>
+<p>
+  <%= link_to "Back to restaurants", root_path %>
+</p>

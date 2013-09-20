@@ -1,0 +1,14 @@
+<div class="small">
+  <%= link_to "login to admin page", admin_root_path %>
+</div>
+
+<h1>Pizzas Chain</h1>
+
+<h2>List of pizzerias:</h2>
+<ul>
+  <% @restaurants.each do |restaurant| -%>
+    <li>
+      <%= restaurant.name %>
+      <%= link_to "see offer", restaurant_path(restaurant) %></li>
+  <% end -%>
+</ul>

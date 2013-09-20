@@ -1,0 +1,7 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+mia:
+  name: Pizza Place
+
+ristorante:
+  name: Pizza Ristorante

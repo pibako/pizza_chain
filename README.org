@@ -1,0 +1,10 @@
+#+TITLE: Pizza chain README
+#+OPTIONS:   toc:nil
+
+* Prerequisites
+  To run this app you must have:
+  - ruby version 1.9.3-p448 installed (I personally prefer to use
+    rbenv but rvm is fine).
+  - sqlite3 (usually available on any platform)
+* Installation
+  Get the app from my github account:
