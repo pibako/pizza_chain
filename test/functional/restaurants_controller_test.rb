@@ -7,8 +7,7 @@ class RestaurantsControllerTest < ActionController::TestCase
   end
 
   test "should get show" do
-    get :show
+    get :show, id: restaurants(:place)
     assert_response :success
   end
-
 end

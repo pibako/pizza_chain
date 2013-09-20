@@ -7,22 +7,23 @@ class PizzaTest < ActiveSupport::TestCase
   end
 
   test "pizza must contain name, price and description" do
+    pizzeria = restaurants(:place)
     assert_difference("Pizza.count") do
-      Pizza.create(name: "diavolo",
-                   price: 10.50,
-                   description: "some ingredients")
+      pizzeria.pizzas.create(name: "diavolo",
+                             price: 10.50,
+                             description: "some ingredients")
     end
     assert_no_difference("Pizza.count") do
-      Pizza.create(price: 10.50,
-                   description: "some ingredients")
+      pizzeria.pizzas.create(price: 10.50,
+                             description: "some ingredients")
     end
     assert_no_difference("Pizza.count") do
-      Pizza.create(name: "diavolo",
-                   description: "some ingredients")
+      pizzeria.pizzas.create(name: "diavolo",
+                             description: "some ingredients")
     end
     assert_no_difference("Pizza.count") do
-      Pizza.create(name: "diavolo",
-                   price: 10.50)
+      pizzeria.pizzas.create(name: "diavolo",
+                             price: 10.50)
     end
   end
 end
