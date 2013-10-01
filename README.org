@@ -1,6 +1,23 @@
 #+TITLE: Pizza Chain README
 #+OPTIONS:   toc:nil
 
+* Objective
+** Requirements
+   The following requirements should be met:
+   - It should work.
+   - It should contain detailed instructions about how to run the program.
+   - It should contain automated tests.
+   - It should be simple yet extensible.
+
+** Description
+   The client owns a pizza chain, and needs an application to manage
+   the menus. Each pizza restaurant has a unique name, address and
+   hours of service. In each pizzeria there may be many types of
+   pizza. Each pizza has a name, price and ingredients (as a
+   description). The task is to write a simple application for
+   managing restaurants and types of pizza available in them. The
+   layout is not important, as long as it’s simple and clean.
+
 * Prerequisites
   To run this app you must have:
   - ruby version 1.9.3-p448 installed (I personally prefer to use
